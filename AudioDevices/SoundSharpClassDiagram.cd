@@ -1,7 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Struct Name="AudioDevices.Time">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Time.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
   <Enum Name="AudioDevices.Category">
-    <Position X="1.5" Y="1" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BEIIACAgAAAAkAAAAEAAAAgQABKAAAAAAIgAIEIABAg=</HashCode>
       <FileName>Category.cs</FileName>
