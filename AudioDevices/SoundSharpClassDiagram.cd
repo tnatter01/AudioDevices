@@ -1,9 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Struct Name="AudioDevices.Time">
-    <Position X="2" Y="0.5" Width="1.5" />
+  <Class Name="AudioDevices.Track">
+    <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <HashCode>AAAAEAAAAAAAAAAABEAAgAhAAAAFAAAAAQAAAAIAAgg=</HashCode>
+      <FileName>Track.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="length" />
+      <Field Name="type" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="AudioDevices.Time">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAABBAAAAEAAAAAAAAAAAAAAAAAAABAAAAAQA=</HashCode>
       <FileName>Time.cs</FileName>
     </TypeIdentifier>
   </Struct>

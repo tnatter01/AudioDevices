@@ -30,5 +30,30 @@ namespace AudioDevices
         public Time(int hours, int minutes, int seconds):this(hours * 3600 + minutes * 60 + seconds)
         {
         }
+
+        public override string ToString()
+        {
+            string timeString = "";
+            timeString += hours < 10 ? "0" + hours : hours.ToString();
+            timeString += ":";
+            timeString += minutes < 10 ? "0" + minutes : minutes.ToString();
+            timeString += ":";
+            timeString += seconds < 10 ? "0" + seconds : seconds.ToString();
+            return base.ToString();
+        }
+
+        //property die het aantal seconden terug geeft
+        public int Seconds
+        {
+            get
+            {
+                return this.hours * 3600 + this.minutes * 60 + this.seconds;
+            }
+        }
+
+        public int GetSeconds()
+        {
+            return this.hours * 3600 + this.minutes * 60 + this.seconds;
+        }
     }
 }
