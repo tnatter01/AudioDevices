@@ -10,6 +10,7 @@ namespace AudioDevices
     /// </summary>
     public class Track
     {
+
         #region Fields
         /// <summary>
         /// The identifier
@@ -71,6 +72,9 @@ namespace AudioDevices
         {
             get
             {
+                return this.name != null && this.artist != null ?
+                    this.artist + " - " + this.name : "Unknown";
+                /*
                 if (this.name != null && this.artist != null)
                 {
                     return this.artist + " - " + this.name;
@@ -79,6 +83,7 @@ namespace AudioDevices
                 {
                     return "Unknown";
                 }
+                */
             }
         }
 
@@ -157,6 +162,10 @@ namespace AudioDevices
         public int GetLengthInSeconds()
         {
             return this.length.Seconds;
+
+            //return int.Parse(this.length.ToString().Substring(0, 2)) * 3600 +
+            //    int.Parse(this.length.ToString().Substring(3, 2)) * 60 +
+            //    int.Parse(this.length.ToString().Substring(6, 2));
         }
         #endregion
     }
